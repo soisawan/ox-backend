@@ -16,7 +16,7 @@ export const login = async (req, res) => {
     }
 
     const token = jwt.sign(user, config.app.jwtkey, {
-      expiresIn: "1m",
+      expiresIn: "2m",
     });
 
     return res.status(200).send({
